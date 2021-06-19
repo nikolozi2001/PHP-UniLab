@@ -1,35 +1,35 @@
 <?php
 
 
-$students = [
-    'Nika',
-    'Luka',
-    'Mari',
-    'Nini'
-];
+$employ1 = 'Nika';
+$employ2 = 'Luka';
 
-$hours = [
-    14,
-    12,
-    15,
-    11
-];
 
-foreach ($students as $key => $studentsNames){
-    $hurs = $hours[$key];
-    echo $studentsNames;
-    echo '<br>';
+function calcEmploySalary($workingHours, $hourRate = 10,){
+    return 40 * 4 * $hourRate;
 }
 
-// Task 2
 
-$studentsInfo = [
-    'Nika' => 14,
-    'Luka' => 12,
-    'Mari' => 15,
-    'Nini' => 11
-];
+$employ1Salary = calcEmploySalary(20, 10);
+$employ2Salary = calcEmploySalary(40, 20);
 
-foreach ($students as $studentsNames => $hours){
-    echo $students;
+
+function renderUserSalary($userName, $salary){
+    echo "$userName shen gamoimushave $salary";
 }
+
+
+echo "$employ1 your salary is $employ1Salary";
+echo '<br>';
+echo "$employ2 your salary is $employ2Salary";
+echo ' <br> ';
+$employs = ['worker' => 'Nika', 'Luka', 'Mishiko'];
+echo '<br>';
+echo $employs[0];
+
+foreach ($employs as $employ){
+    echo $employ;
+    echo '<br> <br>';
+}
+
+print_r($employs);
