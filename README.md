@@ -1,3 +1,3 @@
 # PHP-UniLab
 
-# Lecturer: Tornike Menabde
+Lecturer: Tornike Menabde
