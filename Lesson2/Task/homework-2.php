@@ -18,9 +18,18 @@
 if (isset($_GET['name']) && isset($_GET['position'])) {
     $fileText = "UserName: {$_GET['name']}, position: {$_GET['position']}";
     file_put_contents('file_name.txt', $fileText);
+    echo 'Hello, ' . $_GET['name'] . ' your position is ' . $_GET['position'];
+
+    
 }
 
-require('./homework-1.php');
+$employ = [
+    'name' => 'Nika',
+    'position' => 'developer',
+    'salary' => 1400,
+    'currency' => 'gel'
+];
+
 
 ?>
 
@@ -40,7 +49,7 @@ require('./homework-1.php');
 
     <!-- შექმენით html ფორმა სადაც მომხმარებელს შეაყვანინებთ თქვენს მიერ არჩეულ ინფოს -->
     <!-- და ასევე გექნებათ დასაბიმთების ანუ ფორმის გაგზავნის ღილაკი  -->
-    <form method="GET" action="/PHP-UniLab/Lesson2/Task/update-task.php">
+    <form method="GET" action="">
         Name:
         <input require type="text" name="name" placeholder="name" value="<?= $employ['name'] ?>">
         <br />
