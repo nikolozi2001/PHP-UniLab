@@ -49,7 +49,7 @@ $employ = [
 
     <!-- შექმენით html ფორმა სადაც მომხმარებელს შეაყვანინებთ თქვენს მიერ არჩეულ ინფოს -->
     <!-- და ასევე გექნებათ დასაბიმთების ანუ ფორმის გაგზავნის ღილაკი  -->
-    <form method="GET" action="">
+    <form method="GET" action="update-task.php">
         Name:
         <input require type="text" name="name" placeholder="name" value="<?= $employ['name'] ?>">
         <br />
