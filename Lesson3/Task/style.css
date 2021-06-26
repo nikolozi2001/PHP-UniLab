@@ -1,0 +1,29 @@
+.main {
+    text-align: center;
+    background-color: grey;
+}
+
+.click {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #500505;
+    border: 2px solid #E8E8E8;
+    color: #ffff;
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+
+input{
+    width: 200px;
+    height: 30px;
+    background-color: #F8F8F8;
+    border: 2px solid #E8E8E8;
+    padding: 20px;
+    text-align: center;
+    margin: 9px 0;
+}
+
+h3{
+    color: #500505;
+}
