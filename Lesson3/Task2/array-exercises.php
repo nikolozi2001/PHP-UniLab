@@ -5,25 +5,30 @@ $numArrays = [1, 2, 3, 4, 5, 6];
 
 
 // მასივის ყველა ელემენტის მნიშვნელობა გააორმაგეთ
+foreach ($numArrays as $k => $number){
 
-
-echo array_sum($numArrays);
-echo '<br';
-
-
-echo $numArrays * 2;
+}
 
 
 // დაბეჭდეთ ეკრანზე მხოლოდ ლუწი რიცხვები მოცეუმლი მასივიდან
-if ($numArrays % 2 == 0) {
+foreach ($numArrays as $number){
+  if ($number % 2 == 0) {
     echo "It's even";
   }
+}
 
 
 // შექმენით ფუნქცია რომელიც მიიღებს ორ პარამეტრს მასივს და keys 
 // მოცემულ ქიზე თუ არ არსებობს ჩანაწერი წაშლის და დააბრუნებს ახალ მასივს
 // თუ არ არსებობს დაარბუნებს false-ს
-function deleteItem($array, $key){}
+function deleteItem($array, $key){
+  if(isset($array[$key])){
+    unset ($array[$key]);
+    return $array;
+  }else{
+    return false;
+  }
+}
 
 
 
